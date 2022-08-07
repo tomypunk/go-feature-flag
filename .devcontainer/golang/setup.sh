@@ -16,7 +16,7 @@ VERSION='1.19'
 OS='linux'
 ARCH='amd64'
 
-curl -OL https://dl.google.com/go/go${VERSION}.${OS}-${ARCH}.tar.gz
+curl -OL https://go.dev/dl/go${VERSION}.${OS}-${ARCH}.tar.gz
 tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 rm go$VERSION.$OS-$ARCH.tar.gz
 
