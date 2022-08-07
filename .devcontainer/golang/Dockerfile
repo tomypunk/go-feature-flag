@@ -1,7 +1,3 @@
-FROM ubuntu:18.04
-
-COPY . .
-
-ENV PATH "$PATH:/usr/local/go/bin:/home/user/go/bin:/home/user/.cargo/bin"
+ARG VARIANT="1"
+FROM mcr.microsoft.com/vscode/devcontainers/go:0-${VARIANT}
 RUN bash setup.sh
-USER user
